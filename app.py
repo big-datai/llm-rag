@@ -1,6 +1,6 @@
 # Bring in deps
 import os 
-from apikey import apikey 
+
 
 import streamlit as st 
 from langchain_openai.llms import OpenAI
@@ -8,7 +8,7 @@ from langchain.prompts import PromptTemplate
 from langchain.chains import LLMChain, SequentialChain 
 from langchain.memory import ConversationBufferMemory
 from langchain_community.utilities import WikipediaAPIWrapper
-
+from apikey import apikey 
 os.environ['OPENAI_API_KEY'] = apikey
 
 # App framework
